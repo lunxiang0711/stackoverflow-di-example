@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student" class="di.Student">
+		<property name="name" value="joe bloggs" />
+	</bean>
+			
+	<bean id="room" class="di.Room">
+		<property name="roomNumber" value="101" />
+		<property name="allotedTo" ref="student" />
+	</bean>
+
+</beans>
