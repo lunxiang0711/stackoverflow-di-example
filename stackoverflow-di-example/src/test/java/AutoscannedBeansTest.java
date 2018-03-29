@@ -14,7 +14,8 @@ import di.modified.autoscanned.Room_as;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(
 			locations = {
-					"file:src/main/resources/autoscanned-beans.xml"
+					"classpath:/autoscanned-beans.xml"
+//					"file:src/main/resources/autoscanned-beans.xml"
 			}
 		)
 public class AutoscannedBeansTest {

@@ -15,7 +15,8 @@ import di.modified.autowired.Student_aw;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(
 			locations = {
-					"file:src/main/resources/autowired-beans.xml"
+					"classpath:/autowired-beans.xml"
+//					"file:src/main/resources/autowired-beans.xml"
 			}
 		)
 public class AutowiredBeansTest {
